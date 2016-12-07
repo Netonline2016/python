@@ -36,9 +36,10 @@ print(now.__name__)
 def log(func):
 	def wrapper(*args, **kw):
 		print('begin call.')
-		result = func(*args, **kw)
+		# result = func(*args, **kw)
+		func(*args, **kw)
 		print('end call.')
-		return  result
+		# return  result
 	return wrapper
 @log
 def now():
