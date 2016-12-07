@@ -5,6 +5,7 @@ def now():
 	print('2016-12-05')
 f = now
 print(f)
+f()
 print(f())
 print(now.__name__)
 print(f.__name__)
@@ -17,7 +18,7 @@ def log(func):
 @log
 def now():
 	print('2016-12-06')
-print(now())
+now()
 print(now.__name__)
 
 def log(text):
@@ -30,7 +31,7 @@ def log(text):
 @log('execute')
 def now():
 	print('2016-12-07')
-print(now())
+now()
 print(now.__name__)
 
 def log(func):
@@ -44,7 +45,7 @@ def log(func):
 @log
 def now():
 	print('2016-12-08')
-print(now())
+now()
 print(now.__name__)
 
 import functools
